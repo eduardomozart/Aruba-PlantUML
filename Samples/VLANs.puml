@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+
+skinparam {
+    ArrowColor Black
+    DefaultTextAlignment center
+    Shadowing false
+}
+
+skinparam rectangle {
+    BackgroundColor transparent
+    BorderColor #FFFFFF
+}
+
+!define VRTPuml https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/main
+!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/computer-monitor-outline.puml
+!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer2-switch-A.puml
+!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/server-PBX.puml
+
+rectangle "**VLAN 2**\n\n<$computer_monitor_outline{scale=0.21}>" as PC
+rectangle "<$layer2_switch_A{scale=0.21}>" as SW
+rectangle "**VLAN 2**\n\n<$server_PBX{scale=0.21}>" as SRV
+
+PC 0-down-0 SW : G1/0/1
+SW 0-down-0 SRV : G1/0/2
+@enduml
