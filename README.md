@@ -35,8 +35,8 @@ skinparam rectangle {
 !define VRTPuml https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/main
 !include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer3-switch.puml
 
-rectangle "<$layer3_switch{scale=0.21}>\n**Access-1 (Master)**" as SW_ACCESS_1
-rectangle "<$layer3_switch{scale=0.21}>\n**Access-2 (Standby)**" as SW_ACCESS_2
+rectangle "<$layer3_switch>\n**Access-1 (Master)**" as SW_ACCESS_1
+rectangle "<$layer3_switch>\n**Access-2 (Standby)**" as SW_ACCESS_2
 
 SW_ACCESS_1 " 1/1/27" 0-down---0 "1/1/27 " SW_ACCESS_2
 @enduml
@@ -67,8 +67,8 @@ skinparam rectangle {
 !include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/server-PBX.puml
 
 rectangle "**VLAN 2**\n\n<$computer_monitor_outline{scale=0.21}>" as PC
-rectangle "<$layer2_switch_A{scale=0.21}>" as SW
-rectangle "**VLAN 2**\n\n<$server_PBX{scale=0.21}>" as SRV
+rectangle "<$layer2_switch_A>" as SW
+rectangle "**VLAN 2**\n\n<$server_PBX>" as SRV
 
 PC 0-down-0 SW : G1/0/1
 SW 0-down-0 SRV : G1/0/2
