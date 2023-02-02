@@ -17,7 +17,7 @@ skinparam rectangle {
 !include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer2-switch-A.puml
 !include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/server-PBX.puml
 
-rectangle "**VLAN 2**\n\n<$computer_monitor_outline{scale=0.21}>" as PC
+rectangle "**VLAN 2**\n\n<$computer_monitor_outline>" as PC
 rectangle "<$layer2_switch_A>" as SW
 rectangle "**VLAN 2**\n\n<$server_PBX>" as SRV
 
