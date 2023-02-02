@@ -32,8 +32,8 @@ skinparam rectangle {
     BorderColor #FFFFFF
 }
 
-!define VRTPuml https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/main
-!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer3-switch.puml
+!define ArubaPuml https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/main
+!include ArubaPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer3-switch.puml
 
 rectangle "<$layer3_switch>\n**Access-1 (Master)**" as SW_ACCESS_1
 rectangle "<$layer3_switch>\n**Access-2 (Standby)**" as SW_ACCESS_2
@@ -61,10 +61,10 @@ skinparam rectangle {
     BorderColor #FFFFFF
 }
 
-!define VRTPuml https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/main
-!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/computer-monitor-outline.puml
-!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer2-switch-A.puml
-!include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/server-PBX.puml
+!define ArubaPuml https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/main
+!include ArubaPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/computer-monitor-outline.puml
+!include ArubaPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer2-switch-A.puml
+!include ArubaPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/server-PBX.puml
 
 rectangle "**VLAN 2**\n\n<$computer_monitor_outline>" as PC
 rectangle "<$layer2_switch_A>" as SW
