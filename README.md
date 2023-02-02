@@ -15,7 +15,7 @@ The scripts used to generate the images available in this repository are availab
 
 ### VSF
 
-![Basic usage - VSF](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Feduardomozart%2FAruba-PlantUML%2Fmain%2FSamples%2FVSF.puml)
+![Basic usage - VSF](https://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Feduardomozart%2FAruba-PlantUML%2Fmain%2FSamples%2FVSF.puml)
 
 ```csharp
 @startuml
@@ -44,7 +44,7 @@ SW_ACCESS_1 " 1/1/27" 0-down---0 "1/1/27 " SW_ACCESS_2
 
 ### VLANs
 
-![Basic usage - VLANs](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2Feduardomozart%2FAruba-PlantUML%2Fmain%2FSamples%2FVLANs.puml)
+![Basic usage - VLANs](https://www.plantuml.com/plantuml/proxy?idx=0&src=https://raw.githubusercontent.com/eduardomozart/Aruba-PlantUML/8eb75c35b10d36cd7933d6a50578f1523c0ee0fb/Samples/VLANs.puml)
 
 ```csharp
 @startuml
@@ -66,7 +66,7 @@ skinparam rectangle {
 !include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/layer2-switch-A.puml
 !include VRTPuml/HPE-Aruba_Symbols-Generic-Client_Buildings_Infrastructure/server-PBX.puml
 
-rectangle "**VLAN 2**\n\n<$computer_monitor_outline{scale=0.21}>" as PC
+rectangle "**VLAN 2**\n\n<$computer_monitor_outline>" as PC
 rectangle "<$layer2_switch_A>" as SW
 rectangle "**VLAN 2**\n\n<$server_PBX>" as SRV
 
